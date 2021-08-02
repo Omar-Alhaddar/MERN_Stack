@@ -17,11 +17,14 @@ export default () => {
             });
     },[product])
 
+
+
     return (
         <div>
             <Products />
             <hr/>
             <h1>All Products:</h1>
+           
            {loaded && <ProductList product={product}/>}
         </div>
     )
